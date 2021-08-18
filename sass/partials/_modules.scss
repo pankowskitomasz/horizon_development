@@ -1,3 +1,38 @@
+.bg{
+    &-about-desc{
+        @include set-background($bg__about-desc-img,0,"center right","cover","scroll");
+    }
+    &-about-ext{
+        @include set-background($bg__about-ext-img,0,"center right","cover","scroll");
+    }   
+    &-contact{
+        @include set-background($bg__contact-img,0,"center","cover","scroll");
+    }
+    &-green{
+        &-dark{
+            background-color: $color__green--dark!important;
+        }
+        &-light{
+            background-color: $color__green--light!important;
+        }
+    }
+    &-home{
+        @include set-background($bg__home-img,0,"bottom right","cover","scroll");
+    }
+    &-services{
+        @include set-background($bg__services-img,0,"center right","cover","fixed");
+    }
+}
+.border{
+    &-green{
+        &-dark{
+            border-color: $color__green--dark!important;
+        }
+        &-light{
+            border-color: $color__green--light!important;
+        }
+    }
+}
 .comingsoon{
     &-s1{
         @include set-background($comingsoon-img,0,"center","cover","fixed");
@@ -10,9 +45,9 @@
     }
 }
 
-.privacy{
-    &-s1{
-        @include set-background($privacy-img,0,"center","cover","fixed");
+.h{
+    &-50vh{
+        height: 50vh;
     }
 }
 
@@ -20,6 +55,74 @@
     &-underline{
         &:hover{
             text-decoration: underline !important;
+        }
+    }
+}
+
+.maxh{
+    &-600{
+        max-height: 600px;
+    }
+}
+
+.opacity{
+    &-8{
+        opacity: 0.8;
+    }
+    &-9{
+        opacity: 0.9;
+    }
+}
+
+.privacy{
+    &-s1{
+        @include set-background($privacy-img,0,"center","cover","fixed");
+    }
+}
+
+.skew{
+    &-x{
+        &-10{
+            transform: skewX(-10deg);
+        }
+    }
+}
+
+.text{
+    &-green{
+        &-dark{
+            color: $color__green--dark!important;
+        }
+        &-light{
+            color: $color__green--light!important;
+        }
+    }
+    &-shadow{
+        &-dark{
+            text-shadow: $text__shadow--dark;
+        }
+    }
+}
+
+@media all and (max-width:767px){
+    .bg-md{
+        &-green{
+            &-dark{
+                background-color: $color__green--dark!important;
+            }
+            &-light{
+                background-color: $color__green--light!important;
+            }
+        }
+    }
+    .border-md{
+        &-green{
+            &-dark{
+                border: 1px solid $color__green--dark!important;
+            }
+            &-light{
+                border: 1px solid $color__green--light!important;
+            }
         }
     }
 }
