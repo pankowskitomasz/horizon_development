@@ -126,3 +126,20 @@
         }
     }
 }
+@media all and (min-width: 768px){
+    @media all and (orientation: portrait){
+        .index{
+            &-s1{
+                * {
+                    color: #fff!important;
+                    text-shadow: $text__shadow--dark;
+                }
+            }
+        }
+    }
+    .index{
+        &-s1{
+            background-position: center !important;
+        }
+    }
+}
