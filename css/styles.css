@@ -154,6 +154,19 @@ body, html {
     border: 1px solid #00cfcf !important;
   }
 }
+@media all and (min-width: 768px) and (orientation: portrait) {
+  /* line 133, ../sass/partials/_modules.scss */
+  .index-s1 * {
+    color: #fff !important;
+    text-shadow: 1px 1px 2px #000;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 141, ../sass/partials/_modules.scss */
+  .index-s1 {
+    background-position: center !important;
+  }
+}
 /* line 2, ../sass/partials/_minh.scss */
 .minh-25vh {
   min-height: 25vh;
